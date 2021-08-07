@@ -1,0 +1,95 @@
+.bolt {
+  color: #205c85;
+}
+
+.container {
+  padding: 30px;
+  margin: 0 auto;
+}
+.card {
+  display: block;
+  margin: 0 auto;
+  max-width: 55%;
+  padding: 20px;
+}
+
+.clouds {
+  color: rgb(204, 200, 200);
+}
+
+.conditions {
+  text-transform: capitalize;
+}
+
+.city {
+  font-size: 55px;
+  text-align: center;
+  padding-top: 12px;
+  font-family: "Oxygen", sans-serif;
+  font-weight: 100;
+}
+
+.date-time {
+  font-family: "Fira Sans", sans-serif;
+  font-size: 22px;
+}
+
+.day {
+  text-align: center;
+  padding-top: 30px;
+  font-family: "Fira Sans", sans-serif;
+  font-size: 18px;
+}
+
+.enter-city {
+  font-family: "Oxygen", sans-serif;
+  font-size: 18px;
+}
+
+.search-btn {
+  background: #205c85;
+  color: white;
+  font-family: "Oxygen", sans-serif;
+  font-size: 18px;
+}
+.search-btn:hover {
+  background: white;
+  color: #205c85;
+  border: 1px solid #205c85;
+}
+
+.current-btn {
+  font-family: "Oxygen", sans-serif;
+  font-size: 18px;
+}
+.main-temperature {
+  font-size: 77px;
+  text-align: center;
+  font-family: "Oxygen", sans-serif;
+  font-weight: bolder;
+}
+
+.main-weather {
+  width: 45%;
+  display: block;
+  margin: auto;
+}
+
+.rainy {
+  color: #5acffb;
+}
+.sun {
+  display: block;
+  margin: auto;
+  padding-top: 12px;
+  width: 65px;
+}
+.temperature {
+  text-align: center;
+  font-family: "Fira Sans", sans-serif;
+  font-size: 20px;
+}
+.weather-image {
+  font-size: 60px;
+  text-align: center;
+}
