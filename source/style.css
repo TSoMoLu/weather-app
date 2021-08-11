@@ -1,24 +1,35 @@
 .entire-body {
-  padding: 30px;
+  padding: 20px;
   display: block;
-  margin: 0 auto;
-  max-width: 50%;
+  margin: 30px auto;
+  max-width: 40%;
+  border: lightslategray solid 1px;
+  border-radius: 10px;
 }
 
 #conditions {
   text-transform: capitalize;
+  font-family: arial, sans-serif;
+  font-size: 16px;
+  color: rgb(112, 117, 122);
+  font-weight: 400;
+  text-align: right;
 }
 
 #main-city {
   font-size: 22px;
   padding-top: 12px;
-  font-family: "Oxygen", sans-serif;
-  font-weight: 100;
+  font-family: "Google Sans", arial, sans-serif;
+  font-weight: 400;
+  color: rgb(32, 33, 36);
 }
 
 #date-time {
-  font-family: "Fira Sans", sans-serif;
+  font-family: arial, sans-serif;
   font-size: 16px;
+  color: rgb(112, 117, 122);
+  font-weight: 400;
+  text-align: right;
 }
 
 #enter-city {
@@ -44,18 +55,22 @@
 }
 #main-temperature {
   font-size: 48px;
-  font-family: "Oxygen", sans-serif;
-  font-weight: bold;
+  font-family: "Google Sans", arial, sans-serif;
+  font-weight: 400;
 }
 
-.main-weather {
+#main-weather-image {
   width: 20%;
 }
 
 .units {
-  font-size: 14px;
+  font-size: 16px;
   position: relative;
   bottom: 22px;
+  cursor: pointer;
+  font-family: arial, sans-serif;
+  color: rgb(112, 117, 122);
+  font-weight: 400;
 }
 
 li {
