@@ -8,12 +8,15 @@
 }
 
 #conditions {
-  text-transform: capitalize;
   font-family: arial, sans-serif;
   font-size: 16px;
   color: rgb(112, 117, 122);
   font-weight: 400;
   text-align: right;
+}
+
+#conditions::first-letter {
+  text-transform: capitalize;
 }
 
 #main-city {
@@ -75,4 +78,17 @@
 
 li {
   list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+.active {
+  color: rgb(112, 117, 122);
+  cursor: default;
+}
+
+a:hover {
+  color: black;
 }
