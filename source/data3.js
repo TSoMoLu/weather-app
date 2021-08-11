@@ -21,9 +21,6 @@ function showPosition(position) {
   let lat = position.coords.latitude;
   let long = position.coords.longitude;
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&units=metric&appid=${apiKey}`;
-  axios.get(apiUrl).then(showTemperature);
-  axios.get(apiUrl).then(showCity);
-  axios.get(apiUrl).then(weatherDescription);
 }
 
 function showPositionEvent() {
