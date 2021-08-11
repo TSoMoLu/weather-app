@@ -1,13 +1,14 @@
 .entire-body {
   display: block;
   margin: 30px auto;
-  max-width: 40%;
+  max-width: 38%;
 }
 
 .container {
-  border: lightslategray solid 1px;
+  border: rgb(112, 117, 122) solid 1px;
   border-radius: 10px;
-  padding: 20px;
+  padding: 20px 0 0 20px;
+  padding-right: 0px;
 }
 
 #conditions {
@@ -25,7 +26,8 @@
 #main-city {
   font-size: 22px;
   padding-top: 12px;
-  font-family: "Google Sans", arial, sans-serif;
+  padding-left: 15px;
+  font-family: arial, sans-serif;
   font-weight: 400;
   color: rgb(32, 33, 36);
 }
@@ -44,15 +46,15 @@
 }
 
 .search-btn {
-  background: #205c85;
+  background: #240747;
   color: white;
-  font-family: "Oxygen", sans-serif;
+  font-family: arial, sans-serif;
   font-size: 14px;
 }
 .search-btn:hover {
   background: white;
-  color: #205c85;
-  border: 1px solid #205c85;
+  color: #240747;
+  border: 1px solid #240747;
 }
 
 #current-btn {
@@ -63,10 +65,15 @@
   font-size: 48px;
   font-family: "Google Sans", arial, sans-serif;
   font-weight: 400;
+  color: #240747;
+  padding-left: 15px;
 }
 
 #main-weather-image {
-  width: 20%;
+  width: 25%;
+  padding-left: 15px;
+  position: relative;
+  bottom: 25px;
 }
 
 .units {
@@ -85,7 +92,7 @@ li {
 
 a {
   text-decoration: none;
-  color: black;
+  color: #240747;
 }
 .active {
   color: rgb(112, 117, 122);
@@ -98,9 +105,18 @@ a:hover {
 
 .author {
   font-family: "Google Sans", arial, sans-serif;
-  padding-top: 15px;
-  font-size: 13px;
+  padding-top: 12px;
+  font-size: 15px;
+  color: #240747;
 }
 .git-link {
   color: rgb(112, 117, 122);
+}
+
+.weather-details {
+  padding-right: 48px;
+}
+
+.btn-success {
+  color: white;
 }
