@@ -7,8 +7,7 @@
 .container {
   border: rgb(112, 117, 122) solid 1px;
   border-radius: 10px;
-  padding: 20px 0 0 20px;
-  padding-right: 0px;
+  padding: 30px 0 0 20px;
 }
 
 #conditions {
@@ -25,7 +24,7 @@
 
 #main-city {
   font-size: 22px;
-  padding-top: 12px;
+  padding-top: 15px;
   padding-left: 15px;
   font-family: arial, sans-serif;
   font-weight: 400;
@@ -67,6 +66,7 @@
   font-weight: 400;
   color: #240747;
   padding-left: 15px;
+  padding-top: 20px;
 }
 
 #main-weather-image {
