@@ -1,13 +1,14 @@
 .entire-body {
   display: block;
   margin: 30px auto;
-  max-width: 38%;
+  width: 620px;
+  max-width: 100%;
 }
 
 .container {
   border: rgb(112, 117, 122) solid 1px;
   border-radius: 10px;
-  padding: 30px 0 0 20px;
+  padding: 25px 0 10px 20px;
 }
 
 #conditions {
@@ -15,7 +16,7 @@
   font-size: 16px;
   color: rgb(112, 117, 122);
   font-weight: 400;
-  text-align: right;
+  text-align: left;
 }
 
 #conditions::first-letter {
@@ -36,7 +37,7 @@
   font-size: 16px;
   color: rgb(112, 117, 122);
   font-weight: 400;
-  text-align: right;
+  text-align: left;
 }
 
 #enter-city {
@@ -49,6 +50,7 @@
   color: white;
   font-family: arial, sans-serif;
   font-size: 14px;
+  margin-left: 10px;
 }
 .search-btn:hover {
   background: white;
@@ -70,10 +72,8 @@
 }
 
 #main-weather-image {
-  width: 25%;
   padding-left: 15px;
-  position: relative;
-  bottom: 25px;
+  width: 150px;
 }
 
 .units {
@@ -113,10 +113,33 @@ a:hover {
   color: rgb(112, 117, 122);
 }
 
-.weather-details {
-  padding-right: 48px;
-}
-
 .btn-success {
   color: white;
+}
+
+.week-day {
+  text-align: center;
+  color: rgb(186, 186, 186);
+  font-size: 16px;
+  font-family: arial, sans-serif;
+}
+
+.weather-forecast {
+  text-align: center;
+}
+.forecast-temp {
+  font-family: arial, sans-serif;
+  font-size: 13px;
+}
+
+.max-temp {
+  color: rgb(112, 117, 122);
+}
+
+.min-temp {
+  color: rgb(186, 186, 186);
+}
+
+.sun {
+  width: 45px;
 }
