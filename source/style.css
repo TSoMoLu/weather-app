@@ -7,8 +7,8 @@
 
 .container {
   border: rgb(112, 117, 122) solid 1px;
-  border-radius: 10px;
-  padding: 25px 0 10px 20px;
+  border-radius: 8px;
+  padding: 25px 5px 20px 18px;
 }
 
 #conditions {
@@ -63,7 +63,7 @@
   font-size: 14px;
 }
 #main-temperature {
-  font-size: 48px;
+  font-size: 50px;
   font-family: "Google Sans", arial, sans-serif;
   font-weight: 400;
   color: #240747;

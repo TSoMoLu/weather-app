@@ -93,6 +93,29 @@ function showPosition(position) {
   axios.get(apiUrl).then(showMainWeatherImage);
 }
 
+function showForecast() {
+  let forecast = document.querySelector("#forecast");
+  let days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+
+  let forecastHTML = `<div class="row">`;
+
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `     <div class="col-2">
+              <div class="week-day">${day}</div>
+              <img src="images/sun-color.svg" alt="sun" class="sun" />
+              <div class="forecast-temp">
+                <span class="max-temp"> 29° </span>
+                <span class="min-temp"> 18° </span>
+              </div>
+            </div>
+            `;
+  });
+  forecastHTML = forecastHTML + `</div>`;
+  forecast.innerHTML = forecastHTML;
+}
+
 function showPositionEvent() {
   event.preventDefault();
   navigator.geolocation.getCurrentPosition(showPosition);
@@ -123,6 +146,7 @@ function search(city) {
 }
 
 search("Lagos");
+showForecast();
 
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", cityChange);
