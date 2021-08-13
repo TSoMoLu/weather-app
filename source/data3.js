@@ -34,6 +34,38 @@ function showDate(response) {
   date.innerHTML = formatDate(response.data.dt * 1000);
 }
 
+function showForecast(response) {
+  console.log(response.data.daily);
+  let forecast = document.querySelector("#forecast");
+  let days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+
+  let forecastHTML = `<div class="row">`;
+
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `     <div class="col-2">
+              <div class="week-day">${day}</div>
+              <img src="images/sun-color.svg" alt="sun" class="sun" />
+              <div class="forecast-temp">
+                <span class="max-temp"> 29° </span>
+                <span class="min-temp"> 18° </span>
+              </div>
+            </div>
+            `;
+  });
+  forecastHTML = forecastHTML + `</div>`;
+  forecast.innerHTML = forecastHTML;
+}
+
+function getForecast(coordinates) {
+  console.log(coordinates);
+  let apiKey = "ffeb16c2d5b651aa562f048e606b7089";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`;
+  console.log(apiUrl);
+  axios.get(apiUrl).then(showForecast);
+}
+
 function showMainWeatherImage(response) {
   let weatherIcon = document.querySelector("#main-weather-image");
   weatherIcon.setAttribute(
@@ -41,6 +73,8 @@ function showMainWeatherImage(response) {
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
   weatherIcon.setAttribute("alt", response.data.weather[0].description);
+
+  getForecast(response.data.coord);
 }
 
 function showTemperature(response) {
@@ -93,34 +127,9 @@ function showPosition(position) {
   axios.get(apiUrl).then(showMainWeatherImage);
 }
 
-function showForecast() {
-  let forecast = document.querySelector("#forecast");
-  let days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
-
-  let forecastHTML = `<div class="row">`;
-
-  days.forEach(function (day) {
-    forecastHTML =
-      forecastHTML +
-      `     <div class="col-2">
-              <div class="week-day">${day}</div>
-              <img src="images/sun-color.svg" alt="sun" class="sun" />
-              <div class="forecast-temp">
-                <span class="max-temp"> 29° </span>
-                <span class="min-temp"> 18° </span>
-              </div>
-            </div>
-            `;
-  });
-  forecastHTML = forecastHTML + `</div>`;
-  forecast.innerHTML = forecastHTML;
-}
-
 function showPositionEvent() {
   event.preventDefault();
   navigator.geolocation.getCurrentPosition(showPosition);
-  let city = document.querySelector("#enter-city");
-  city.value.innerHTML = null;
 }
 function cityChange() {
   event.preventDefault();
@@ -146,7 +155,6 @@ function search(city) {
 }
 
 search("Lagos");
-showForecast();
 
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", cityChange);
