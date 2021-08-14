@@ -80,27 +80,13 @@
   font-size: 16px;
   position: relative;
   bottom: 22px;
-  cursor: pointer;
   font-family: arial, sans-serif;
-  color: rgb(112, 117, 122);
+  color: #240747;
   font-weight: 400;
 }
 
 li {
   list-style: none;
-}
-
-a {
-  text-decoration: none;
-  color: #240747;
-}
-.active {
-  color: rgb(112, 117, 122);
-  cursor: default;
-}
-
-a:hover {
-  color: black;
 }
 
 .author {
