@@ -136,3 +136,7 @@ li {
 .forecast-image {
   width: 45px;
 }
+
+.location {
+  width: 20px;
+}
