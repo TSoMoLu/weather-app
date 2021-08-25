@@ -46,7 +46,7 @@
 }
 
 .search-btn {
-  background: #ff6f3c;
+  background: #a2792f;
   color: white;
   font-family: arial, sans-serif;
   font-size: 14px;
@@ -54,8 +54,8 @@
 }
 .search-btn:hover {
   background: white;
-  color: #ff6f3c;
-  border: 1px solid #ff6f3c;
+  color: #a2792f;
+  border: 1px solid #a2792f;
 }
 
 #current-btn {
